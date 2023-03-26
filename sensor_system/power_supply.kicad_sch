@@ -1731,7 +1731,7 @@
     (property "Value" "Magnetic connector" (at 31.75 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 31.75 27.94 0)
+    (property "Footprint" "Magnetic connector:Magnetic connector" (at 31.75 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.75 27.94 0)
