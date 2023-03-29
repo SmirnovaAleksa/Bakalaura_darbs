@@ -1100,7 +1100,6 @@
     )
   )
 
-
   (junction (at 168.91 36.83) (diameter 0) (color 0 0 0 0)
     (uuid 0706220b-8e3b-4931-b0bb-2579e93603d0)
   )
@@ -1169,6 +1168,9 @@
   )
   (junction (at 78.74 25.4) (diameter 0) (color 0 0 0 0)
     (uuid f26e32af-63ef-42ad-ae98-33b3a389b840)
+  )
+  (junction (at 163.83 36.83) (diameter 0) (color 0 0 0 0)
+    (uuid fc524893-1fd2-4da3-9b30-97894fed1c00)
   )
 
   (no_connect (at 134.62 41.91) (uuid e8e7ede8-5590-4d61-94ba-ccb1cf27de35))
@@ -1353,7 +1355,7 @@
     (stroke (width 0) (type default))
     (uuid bb23e9bf-299a-409f-8d9e-0ab7664387c2)
   )
-  (wire (pts (xy 168.91 36.83) (xy 162.56 36.83))
+  (wire (pts (xy 168.91 36.83) (xy 163.83 36.83))
     (stroke (width 0) (type default))
     (uuid bc610afd-28e1-4cf3-9123-8fa605cba903)
   )
@@ -1392,6 +1394,10 @@
   (wire (pts (xy 50.8 63.5) (xy 50.8 71.12))
     (stroke (width 0) (type default))
     (uuid d4e9ac97-bde9-4b9b-9c30-de8e26143672)
+  )
+  (wire (pts (xy 163.83 36.83) (xy 162.56 36.83))
+    (stroke (width 0) (type default))
+    (uuid d66ff105-b1de-4309-afbb-9ee62e0020d5)
   )
   (wire (pts (xy 157.48 66.04) (xy 154.94 66.04))
     (stroke (width 0) (type default))
@@ -1665,7 +1671,7 @@
     (property "Value" "Solar_panels" (at 36.3728 67.7164 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 34.29 73.66 0)
+    (property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (at 34.29 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 34.29 73.66 0)
@@ -2249,6 +2255,37 @@
     )
   )
 
+  (symbol (lib_id "Device:LED") (at 163.83 40.64 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8c31a51b-ef99-43bd-b2ea-8b0d202bc1e2)
+    (property "Reference" "D6" (at 158.75 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "ON/OFF" (at 161.29 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 163.83 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 163.83 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 148acbfb-9d6b-4416-a3ab-80d7ed1fb67f))
+    (pin "2" (uuid 127e9e78-616c-4c67-9561-72321d7cfdad))
+    (instances
+      (project "kursa projekts 2"
+        (path "/545a2faa-2381-4aac-bd87-ceae8eaeec05"
+          (reference "D6") (unit 1)
+        )
+      )
+      (project "sensor_system"
+        (path "/d745cb62-8f4d-408c-9af8-25e31ee1e0d0/89b6e76f-e734-47f0-98b1-101fd9e540da"
+          (reference "D10") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GNDREF") (at 203.2 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 919a57ce-442a-4b3f-b8c6-2e64e60628f0)
@@ -2401,6 +2438,37 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 163.83 48.26 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ab52c4fd-b926-489a-905f-fd02883edaf6)
+    (property "Reference" "R3" (at 168.91 50.8 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "470" (at 168.91 49.53 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.608 48.26 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 163.83 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 510e5f2e-b72e-4b03-abaf-cee5322c7900))
+    (pin "2" (uuid a77f9b88-dacd-48f3-9f3d-89189603707f))
+    (instances
+      (project "kursa projekts 2"
+        (path "/545a2faa-2381-4aac-bd87-ceae8eaeec05"
+          (reference "R3") (unit 1)
+        )
+      )
+      (project "sensor_system"
+        (path "/d745cb62-8f4d-408c-9af8-25e31ee1e0d0/89b6e76f-e734-47f0-98b1-101fd9e540da"
+          (reference "R14") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 168.91 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ad26520c-3c97-4cb1-a6a5-3957a2b460a7)
@@ -2457,6 +2525,36 @@
       (project "sensor_system"
         (path "/d745cb62-8f4d-408c-9af8-25e31ee1e0d0/89b6e76f-e734-47f0-98b1-101fd9e540da"
           (reference "#PWR027") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GNDREF") (at 163.83 52.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b528d27a-06ba-4b4f-85d0-5832ae854b77)
+    (property "Reference" "#PWR07" (at 163.83 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GNDREF" (at 163.957 56.4642 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 163.83 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 163.83 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c3edb4c6-7a79-490f-9414-1211be039a7e))
+    (instances
+      (project "kursa projekts 2"
+        (path "/545a2faa-2381-4aac-bd87-ceae8eaeec05"
+          (reference "#PWR07") (unit 1)
+        )
+      )
+      (project "sensor_system"
+        (path "/d745cb62-8f4d-408c-9af8-25e31ee1e0d0/89b6e76f-e734-47f0-98b1-101fd9e540da"
+          (reference "#PWR04") (unit 1)
         )
       )
     )
