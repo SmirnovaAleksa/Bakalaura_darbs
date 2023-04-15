@@ -1,5 +1,8 @@
 # Bakalaura_darbs
 Working with ESP32 and STM32 for plant monitoring system
-![image](https://user-images.githubusercontent.com/40357373/229561338-1ca33abb-11ff-4821-94e3-6ece1f55ebd9.png)
-![image](https://user-images.githubusercontent.com/40357373/229561414-a017beab-a71d-4af1-8ac4-1cf5f552a78e.png)
-![image](https://user-images.githubusercontent.com/40357373/229561480-cb4d110b-a382-4a26-9039-960ee1d25902.png)
+Final board
+![image](https://user-images.githubusercontent.com/40357373/232217995-62dc4ac8-52d6-4189-a237-9247edc39656.png)![image](https://user-images.githubusercontent.com/40357373/232218020-77d81988-1751-435c-afb0-8a13e8b3d08d.png)
+![image](https://user-images.githubusercontent.com/40357373/232218090-5e2caab2-6425-40e2-9ad6-349683dba7e3.png)
+3D view
+![image](https://user-images.githubusercontent.com/40357373/232218166-9668795d-19c1-4041-b566-68653e28a85c.png)
+![Uploading image.png…]()
